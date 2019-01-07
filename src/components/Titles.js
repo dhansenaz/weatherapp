@@ -3,12 +3,12 @@ import React from "react";
 
 const Titles = () => (
     <div>
-    <h1>
+    <h1 className="title">
         Weather Finder
     </h1>
-    <p>
-        Find out Temperatures and more
-    </p>
+    <h4>
+        Check Temperatures and More
+    </h4>
 </div>
 )
 

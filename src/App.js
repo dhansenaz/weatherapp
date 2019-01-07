@@ -47,7 +47,6 @@ class App extends React.Component {
       <div className="App">
         <div className="wrapper">
                   <Titles />
-                
                 <div>
                   <Form getWeather={this.getWeather} />
                   <Weather 
