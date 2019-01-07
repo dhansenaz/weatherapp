@@ -2,8 +2,8 @@ import React from "react";
 
 
 const Titles = () => (
-    <div>
-    <h1 className="title">
+    <div className='title'>
+    <h1>
         Weather Finder
     </h1>
     <h4>

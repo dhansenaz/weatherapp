@@ -96,7 +96,7 @@ table {
 
 .form-wrapper {
   position: relative;
-  top:50px;
+  top:100px;
   display:grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
@@ -105,8 +105,33 @@ table {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
 }
+.input-box {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
 
 input {
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: solid 2px gray;
+  width: 300px;
+  color: blue;
+  -webkit-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+
+}
+input:focus,:active{
+outline: none
+  
+}
+input:focus {
+border-bottom: solid 2px grey;
+  
+}
+
+/* input {
  text-decoration: none;
  width:300px;
  border-radius:10px;
@@ -115,13 +140,16 @@ input {
  background: transparent !important;
  box-shadow: 10px 10px 10px;
  
-}
+} */
 
 .title {
   color:#fff;
-  padding-top:20px;
+  padding-top:60px;
   text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
 button {
   border-radius: 10px;
   border:1px solid black;
@@ -138,8 +166,14 @@ button:hover {
 }
 
 .weather-results {
-  position: absolute;
-  top:50%;
-  left:30%;
-  text-align: left;
+  margin:0 auto;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top:150px;
+  font-size: 1.5em;
+  padding: 10px;
+  font-size: 1.25em;
+  line-height: 30px;
 }
