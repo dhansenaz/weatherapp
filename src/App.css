@@ -92,12 +92,12 @@ table {
   rgba(240,150,75,1) 92%,
   rgba(236,126,57,1) 98%,rgba(235,120,53,1) 100%);
   border-radius: 10px;
-  box-shadow: 20px 20px 20px;
+  box-shadow: 10px 10px 10px ;
 }
 
 .form-wrapper {
   position: relative;
-  top:100px;
+  top:40px;
   display:grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
@@ -125,7 +125,9 @@ input {
   border: none;
   border-bottom: solid 2px gray;
   width: 300px;
-  color: blue;
+  color: #Fff;
+  letter-spacing: 2px;
+  font-size: 1.2em;
   -webkit-transition: all 0.6s ease-out 0s;
   transition: all 0.6s ease-out 0s;
 
@@ -143,16 +145,20 @@ border-bottom: solid 2px grey;
   color:#fff;
   padding-top:100px;
   text-transform: uppercase;
-  font-size: 1.4em;
+  font-size: 2em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height:40px;
 
 }
 
+.title-desc {
+  font-size: .5em;
+}
+
 button {
   margin-top:30px;
   border-radius: 10px;
-  border:1px solid black;
+  border:1px solid rgb(80, 80, 80);
   padding:10px;
   background: transparent;
   
@@ -171,7 +177,7 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top:150px;
+  margin-top:65px;
   font-size: 1.5em;
   padding: 10px;
   font-size: 1.1em;
