@@ -5,7 +5,7 @@ import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
 
-const API_KEY = "3585775f387b0d0cba6c5b3dc41b8167";
+const API_KEY = "d19a9d4be1cbfbe7877fd4ef80a854c7";
 
 class App extends React.Component {
   state = {
@@ -49,6 +49,7 @@ class App extends React.Component {
                   <Titles />
                 <div>
                   <Form getWeather={this.getWeather} />
+                  <div className="weather-results">
                   <Weather 
                     temperature={this.state.temperature} 
                     humidity={this.state.humidity}
@@ -57,6 +58,7 @@ class App extends React.Component {
                     description={this.state.description}
                     error={this.state.error}
                   />
+                  </div>
                 </div>
               </div>
            </div>

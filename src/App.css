@@ -102,14 +102,18 @@ table {
   grid-gap: 20px;
 
 }
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
 input {
+ text-decoration: none;
  width:300px;
  border-radius:10px;
  padding:10px;
  border:1px solid rgb(46, 46, 46);
- background: transparent;
+ background: transparent !important;
  box-shadow: 10px 10px 10px;
- color:rgb(206, 15, 15);
  
 }
 
@@ -117,4 +121,25 @@ input {
   color:#fff;
   padding-top:20px;
   text-transform: uppercase;
+}
+button {
+  border-radius: 10px;
+  border:1px solid black;
+  padding:10px;
+  background: transparent;
+  
+  
+}
+button:hover {
+  cursor: pointer;
+  color:#fff;
+  background:black;
+  
+}
+
+.weather-results {
+  position: absolute;
+  top:50%;
+  left:30%;
+  text-align: left;
 }
