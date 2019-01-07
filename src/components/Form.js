@@ -1,15 +1,17 @@
-import React from "react"
-
-
+import React from "react";
 
 const Form = props => (
+  <form className="form-wrapper"onSubmit={props.getWeather}>
+    <div>
+      <input type="text" name="city" placeholder="City" />
+    </div>
+    <div>
+      <input type="text" name="country" placeholder="Country" />
+    </div>
+    <div>
+      <button>Get Weather</button>
+    </div>
+  </form>
+);
 
-    <form onSubmit={ props.getWeather }>
-    <input type="text" name="city" placeholder="City" />
-    <input type="text" name="country" placeholder="Country" />
-    <button>Get Weather</button>
-    
-</form>
-)
-
-export default Form
+export default Form;
