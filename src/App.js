@@ -4,6 +4,7 @@ import React from "react";
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
+import sun from './img/sun.png'
 
 const API_KEY = "d19a9d4be1cbfbe7877fd4ef80a854c7";
 
@@ -46,6 +47,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="wrapper">
+          <img className="sun" src={sun} alt="sun" />
                   <Titles />
                 <div>
                   <Form getWeather={this.getWeather} />
